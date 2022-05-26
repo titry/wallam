@@ -1,0 +1,14 @@
+#엣지를탐색
+deffind_edges(G,hwys):
+
+edges=[]
+
+foru,v,k,datainG.edges(keys=True,data='highway'):
+
+check1=isinstance(data,str)anddatanotinhwys
+check2=isinstance(data,list)andall([dnotinhwysfordindata])
+
+ifcheck1orcheck2:
+edges.append((u,v,k))
+
+returnset(edges)
