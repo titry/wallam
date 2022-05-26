@@ -1,0 +1,7 @@
+#hwy이정해지지않은경우는black
+G_tmp=G.copy()
+G_tmp.remove_edges_from(G.edges-find_edges(G,hwy_colors.keys()))
+m=ox.plot_graph_folium(G_tmp,popup_attribute='highway',weight=5,color='black')
+
+#지도위에서Hwy_colors에서정해진타입에따라추가적인edge를그림
+forhwy,colorinhwy_colors.items():G_tmp=G.copy()G_tmp.remove_edges_from(find_edges(G_tmp,[hwy]))ifG_tmp.edges:m=ox.plot_graph_folium(G_tmp,graph_map=m,popup_attribute='highway',weight=5,color=color)
