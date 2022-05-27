@@ -1,0 +1,4 @@
+#findtheshortestpathbetweennodes,minimizingtraveltime,thenplotit
+
+route=ox.shortest_path(G,orig,dest,weight="travel_time")
+fig,ax=ox.plot_graph_route(G,route,node_size=0)
